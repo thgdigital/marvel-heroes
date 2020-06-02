@@ -2,8 +2,9 @@
 # Marvel Heroes
 </h1>
 
-<p align="center">
-  <img src="assets/Cover.png" />
+<p align="center" >
+  <img src="assets/homem-aranha.png" width="350" />
+  <img src="assets/black-panther.png" width="350" />
 </p>
 
 <strong>Sejam bem-vindos à Marvel Heroes! Este é um projeto criado para desenvolver nossas habilidades como profissionais, sejamos desenvolvedores ou designers.</strong>
