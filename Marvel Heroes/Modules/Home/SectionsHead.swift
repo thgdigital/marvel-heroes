@@ -14,7 +14,7 @@ class SectionsHead: Sections {
         HeadChangeCharacterCell.self
     }
     override func getCellSize(_ cell: CollectionViewCell.Type, for indexPath: IndexPath) -> CGSize {
-        .init(width: UIScreen.main.bounds.width, height: 340)
+        .init(width: UIScreen.main.bounds.width, height: 200)
     }
     
 }
