@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-  <img src="assets/Cover.png" />
+  <img src="assets/homem-aranha.png" />
 </p>
 
 <strong>Sejam bem-vindos à Marvel Heroes! Este é um projeto criado para desenvolver nossas habilidades como profissionais, sejamos desenvolvedores ou designers.</strong>
