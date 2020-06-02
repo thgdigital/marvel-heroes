@@ -6,12 +6,6 @@
   <img src="assets/Cover.png" />
 </p>
 
-<div align="center">
-
-  [![npm](https://img.shields.io/npm/v/@unform/core.svg?color=%237159c1)](https://www.npmjs.com/package/@unform/core)<space><space>
-
-</div>
-
 <strong>Sejam bem-vindos à Marvel Heroes! Este é um projeto criado para desenvolver nossas habilidades como profissionais, sejamos desenvolvedores ou designers.</strong>
 
 # About
