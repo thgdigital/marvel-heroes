@@ -20,7 +20,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let viewController = HomeListView(collectionViewLayout: UICollectionViewFlowLayout())
         let navigation = UINavigationController(rootViewController: viewController)
         let navigationBar  = navigation.navigationBar
-//        navigationBar.setBackgroundImage(UIImage(), for: .default)
         navigationBar.shadowImage = UIImage()
         navigationBar.tintColor = .black
         navigationBar.isTranslucent = false
