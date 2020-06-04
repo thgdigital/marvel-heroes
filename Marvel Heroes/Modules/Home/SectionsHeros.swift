@@ -23,8 +23,9 @@ class SectionsHeros: Sections {
     }
     
     override func willDisplayCell(_ cell: CollectionViewCell, at indexPath: IndexPath) {
-        if let cell = cell as? BoxHeroesCell, let itemsHeroes = items as? [ItemHeroes]  {
-            cell.items = itemsHeroes
+        if let cell = cell as? BoxHeroesCell, let itemsHeroes = items as? [AlienEntity]  {
+            cell.items = itemsHeroes.map({ ItemMake.mapping(alien: $0) })
+            cell.sectionIndex = indexPath.section
         }
     }
     
@@ -37,4 +38,16 @@ class SectionsHeros: Sections {
     override func getCellSize(_ cell: CollectionViewCell.Type, for indexPath: IndexPath) -> CGSize {
         .init(width: UIScreen.main.bounds.width, height: 260)
     }
+    
+    override func didSelected(indexPath: IndexPath) {
+        guard let alien = items[indexPath.row] as? AlienEntity else {
+            return
+        }
+        
+        (delegate as? SectionsHerosDelegate)?.didSelected(alien: alien, idHero: "SectinId: \(indexPath.section) - row \(indexPath.row)")
+    }
+}
+
+protocol SectionsHerosDelegate: SectionDelegate {
+    func didSelected(alien: AlienEntity, idHero: String)
 }

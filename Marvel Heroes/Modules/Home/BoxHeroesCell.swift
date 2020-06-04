@@ -17,6 +17,8 @@ struct ItemHeroes {
 
 class BoxHeroesCell: CollectionViewCell {
     
+    var sectionIndex: Int = 0
+    
     var items = [ItemHeroes]() {
       didSet {
         collectionView.reloadData()
@@ -35,11 +37,6 @@ class BoxHeroesCell: CollectionViewCell {
         collectionView.register(nibName, forCellWithReuseIdentifier: HeroesCell.identifier)
       }
     }
-    
-    override func awakeFromNib() {
-      super.awakeFromNib()
-//      widthConstraint.constant = UIScreen.main.bounds.width
-    }
 }
 
 extension BoxHeroesCell: UICollectionViewDataSource {
@@ -50,8 +47,11 @@ extension BoxHeroesCell: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: HeroesCell.identifier, for: indexPath) as! HeroesCell
-        cell.configure(item: items[indexPath.row])
+        cell.configure(item: items[indexPath.row], at: IndexPath(item: indexPath.row, section: sectionIndex))
         return cell
+    }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        cellDelegate?.didSelected(indexPath: IndexPath(row: indexPath.row, section: sectionIndex))
     }
     
 }

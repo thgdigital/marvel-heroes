@@ -12,14 +12,14 @@ class Sections {
     
     var items: [Any]
     
-//    weak var delegate: HomeSectionDelegate?
+    weak var delegate: SectionDelegate?
 
     
     var visible: Bool = true
     
     var name: String
     
-    init(items: [Any], name: String) {
+    init(items: [Any], name: String = "") {
         self.items = items
         self.name = name
     }
@@ -101,4 +101,16 @@ class Sections {
             return false
         }
     }
+}
+
+extension Sections: CollectionViewCellDelegate {
+    
+   @objc func didSelected(indexPath: IndexPath) {
+        delegate?.didSelected(at: indexPath)
+    }
+}
+
+
+protocol SectionDelegate: class {
+    func didSelected(at indexPath: IndexPath)
 }

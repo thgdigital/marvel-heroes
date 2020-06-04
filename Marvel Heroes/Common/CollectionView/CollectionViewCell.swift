@@ -26,6 +26,7 @@ class CollectionViewCell: UICollectionViewCell {
 
 protocol CollectionViewCellDelegate: class {
 //    func checkedCode(with data: Data, statusCode: Int, error: NetworkError)
-    func error(error: Error?)
-    func reloadSections(with localArticleUri: String?)
+//    func error(error: Error?)
+//    func reloadSections(with localArticleUri: String?)
+    func didSelected(indexPath: IndexPath)
 }

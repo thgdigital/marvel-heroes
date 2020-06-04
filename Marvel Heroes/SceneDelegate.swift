@@ -17,16 +17,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
       
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: windowScene)
-        let viewController = HomeListView(collectionViewLayout: UICollectionViewFlowLayout())
-        let navigation = UINavigationController(rootViewController: viewController)
-        let navigationBar  = navigation.navigationBar
-        navigationBar.shadowImage = UIImage()
-        navigationBar.tintColor = .black
-        navigationBar.isTranslucent = false
-        navigationBar.backgroundColor = .white
-        window?.rootViewController = navigation
+        window?.rootViewController = HomeWireframe().loadView()
         window?.makeKeyAndVisible()
-        //        HomeWireframe().make(window: window!)
     }
     
     func sceneDidDisconnect(_ scene: UIScene) {

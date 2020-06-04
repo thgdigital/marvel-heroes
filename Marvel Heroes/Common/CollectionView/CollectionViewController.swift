@@ -46,7 +46,7 @@ class CollectionViewController: UICollectionViewController {
     
    func configure() {
         for section in sections {
-//            section.delegate = self
+            section.delegate = self
             registerHeader(section)
         }
     }
@@ -159,6 +159,7 @@ extension CollectionViewController: UICollectionViewDelegateFlowLayout {
     override func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
         let section = sections[indexPath.section]
         if let cell = cell as? CollectionViewCell {
+            cell.cellDelegate = section
             section.willDisplayCell(cell, at: indexPath)
              cell.cellWidthConstraint?.constant = section.cellWidth(collectionWidth: collectionView.frame.width)
             section.requestAds(cell, at: indexPath)
@@ -191,25 +192,17 @@ extension CollectionViewController: UICollectionViewDelegateFlowLayout {
             section.willDisplayFooter(footer)
         }
     }
+    
     override func collectionView(_ collectionView: UICollectionView, shouldHighlightItemAt indexPath: IndexPath) -> Bool {
-        return sections[indexPath.section].shouldHighlight(at: indexPath)
-
-//        if sections[indexPath.section].direction() == .vertical {
-//            return true
-//        } else {
-//            return false
-//        }
+         sections[indexPath.section].shouldHighlight(at: indexPath)
     }
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return sections[section].cellLineSpace(collectionWidth: collectionView.frame.width)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        if (sections.endIndex - 1) == section {
-            return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
-        } else {
-            return sections[section].insetForSection()
-        }
+        sections[section].insetForSection()
     }
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
@@ -232,7 +225,15 @@ extension CollectionViewController: UICollectionViewDelegateFlowLayout {
                 section.didEndDisplayingCell(cell, at: indexPath)
             }
             
-          
         }
     }
+}
+
+extension CollectionViewController: SectionDelegate {
+    
+    @objc func didSelected(at indexPath: IndexPath) {
+        
+        print("fui chamdo")
+    }
+    
 }

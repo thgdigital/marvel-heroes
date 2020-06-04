@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Hero
 
 class HeroesCell: CollectionViewCell {
     @IBOutlet weak var heroesImageView: UIImageView!
@@ -22,9 +23,10 @@ class HeroesCell: CollectionViewCell {
         protagonistLabel.textColor = .primaryGray
     }
     
-    func configure(item: ItemHeroes) {
+    func configure(item: ItemHeroes, at indexPath: IndexPath) {
         moviesLabel.text = item.nameMovies
         protagonistLabel.text = item.protagonist
         heroesImageView.image = item.image.image
+        heroesImageView.hero.id = "SectinId: \(indexPath.section) - row \(indexPath.row)"
     }
 }
