@@ -17,9 +17,12 @@ class DetailPresenter: DetailPresenterInput {
     
     let idHero: String
     
-    init(alien: AlienEntity, idHero: String ) {
+    let wireframe: DetailWireframe
+    
+    init(alien: AlienEntity, idHero: String, wireframe: DetailWireframe ) {
         self.alien = alien
         self.idHero = idHero
+        self.wireframe = wireframe
     }
     
     func viewDidLoad() {
@@ -46,5 +49,9 @@ class DetailPresenter: DetailPresenterInput {
         ]
         output?.showBackgroundView(idHero: self.idHero, image: alien.imagePath)
         output?.loadView(sections: sections)
+    }
+    
+    func didTap() {
+        wireframe.closeView()
     }
 }

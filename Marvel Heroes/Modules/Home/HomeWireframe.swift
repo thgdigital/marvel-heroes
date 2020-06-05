@@ -25,11 +25,11 @@ class HomeWireframe {
     
     func makeNavigationController(viewController: UIViewController) -> UINavigationController {
         let navigation = UINavigationController(rootViewController: viewController)
-            let navigationBar  = navigation.navigationBar
-            navigationBar.shadowImage = UIImage()
-            navigationBar.tintColor = .black
-            navigationBar.isTranslucent = false
-            navigationBar.backgroundColor = .white
+        let navigationBar  = navigation.navigationBar
+        navigationBar.shadowImage = UIImage()
+        navigationBar.tintColor = .black
+        navigationBar.isTranslucent = false
+        navigationBar.backgroundColor = .white
         
         return navigation
     }

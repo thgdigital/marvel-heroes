@@ -10,6 +10,7 @@ import Foundation
 
 protocol DetailPresenterInput {
     func viewDidLoad()
+    func didTap()
 }
 
 protocol DetailPresenterOuput: class {
