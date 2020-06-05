@@ -48,8 +48,8 @@
 		F32D4952248840CE0098EA43 /* DetailHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32D4950248840CD0098EA43 /* DetailHeaderCell.swift */; };
 		F32D4953248840CE0098EA43 /* DetailHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F32D4951248840CE0098EA43 /* DetailHeaderCell.xib */; };
 		F32D4955248846860098EA43 /* CaracteristicsDetailSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32D4954248846860098EA43 /* CaracteristicsDetailSection.swift */; };
-		F32D4958248846B10098EA43 /* CaracteristicsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32D4956248846B10098EA43 /* CaracteristicsCell.swift */; };
-		F32D4959248846B10098EA43 /* CaracteristicsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F32D4957248846B10098EA43 /* CaracteristicsCell.xib */; };
+		F32D4958248846B10098EA43 /* BoxCaracteristicsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32D4956248846B10098EA43 /* BoxCaracteristicsCell.swift */; };
+		F32D4959248846B10098EA43 /* BoxCaracteristicsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F32D4957248846B10098EA43 /* BoxCaracteristicsCell.xib */; };
 		F32D495B2488FA3E0098EA43 /* SectionDetailBiography.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32D495A2488FA3E0098EA43 /* SectionDetailBiography.swift */; };
 		F32D495E2488FA6F0098EA43 /* BiographyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32D495C2488FA6F0098EA43 /* BiographyCell.swift */; };
 		F32D495F2488FA6F0098EA43 /* BiographyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F32D495D2488FA6F0098EA43 /* BiographyCell.xib */; };
@@ -122,8 +122,8 @@
 		F32D4950248840CD0098EA43 /* DetailHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHeaderCell.swift; sourceTree = "<group>"; };
 		F32D4951248840CE0098EA43 /* DetailHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailHeaderCell.xib; sourceTree = "<group>"; };
 		F32D4954248846860098EA43 /* CaracteristicsDetailSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaracteristicsDetailSection.swift; sourceTree = "<group>"; };
-		F32D4956248846B10098EA43 /* CaracteristicsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaracteristicsCell.swift; sourceTree = "<group>"; };
-		F32D4957248846B10098EA43 /* CaracteristicsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CaracteristicsCell.xib; sourceTree = "<group>"; };
+		F32D4956248846B10098EA43 /* BoxCaracteristicsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxCaracteristicsCell.swift; sourceTree = "<group>"; };
+		F32D4957248846B10098EA43 /* BoxCaracteristicsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BoxCaracteristicsCell.xib; sourceTree = "<group>"; };
 		F32D495A2488FA3E0098EA43 /* SectionDetailBiography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionDetailBiography.swift; sourceTree = "<group>"; };
 		F32D495C2488FA6F0098EA43 /* BiographyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiographyCell.swift; sourceTree = "<group>"; };
 		F32D495D2488FA6F0098EA43 /* BiographyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BiographyCell.xib; sourceTree = "<group>"; };
@@ -329,8 +329,8 @@
 				F32D4950248840CD0098EA43 /* DetailHeaderCell.swift */,
 				F32D4951248840CE0098EA43 /* DetailHeaderCell.xib */,
 				F32D4954248846860098EA43 /* CaracteristicsDetailSection.swift */,
-				F32D4956248846B10098EA43 /* CaracteristicsCell.swift */,
-				F32D4957248846B10098EA43 /* CaracteristicsCell.xib */,
+				F32D4956248846B10098EA43 /* BoxCaracteristicsCell.swift */,
+				F32D4957248846B10098EA43 /* BoxCaracteristicsCell.xib */,
 				F32D495A2488FA3E0098EA43 /* SectionDetailBiography.swift */,
 				F32D495C2488FA6F0098EA43 /* BiographyCell.swift */,
 				F32D495D2488FA6F0098EA43 /* BiographyCell.xib */,
@@ -457,7 +457,7 @@
 				F32D4930248685FF0098EA43 /* gilroy-semibold.ttf in Resources */,
 				F32D491B24865E620098EA43 /* CollectionViewFooter.xib in Resources */,
 				F32D4932248685FF0098EA43 /* gilroy-heavy.ttf in Resources */,
-				F32D4959248846B10098EA43 /* CaracteristicsCell.xib in Resources */,
+				F32D4959248846B10098EA43 /* BoxCaracteristicsCell.xib in Resources */,
 				F32D493C24869D2F0098EA43 /* HereosHeader.xib in Resources */,
 				F32D491724865E620098EA43 /* CollectionViewCell.xib in Resources */,
 			);
@@ -549,7 +549,7 @@
 				F32D496624896D200098EA43 /* HomeWireframe.swift in Sources */,
 				F32D491C24865E620098EA43 /* CollectionViewHeader.swift in Sources */,
 				F32D496824896D340098EA43 /* HomePresenter.swift in Sources */,
-				F32D4958248846B10098EA43 /* CaracteristicsCell.swift in Sources */,
+				F32D4958248846B10098EA43 /* BoxCaracteristicsCell.swift in Sources */,
 				F32D491924865E620098EA43 /* Sections.swift in Sources */,
 				F32D496A24896D470098EA43 /* HomeInteractor.swift in Sources */,
 				F32D495B2488FA3E0098EA43 /* SectionDetailBiography.swift in Sources */,

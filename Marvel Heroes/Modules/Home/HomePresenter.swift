@@ -30,20 +30,13 @@ extension HomePresenter: HomeInteractorOutput {
     
     func loadData(entity: GeneractionEntity) {
         
-        var sections: [Sections] = [Sections]()
-        let sectionsHeader = SectionsHead(items: [ItemDefault()])
-        let sectionsHero =  SectionsHeros(items: entity.heroes, name: "Heróis")
-        let sectionsVillains =  SectionsHeros(items: entity.villains, name: "Vilões")
-        let sectionsAntiHeroes =  SectionsHeros(items: entity.antiHeroes, name: "Anti-heróis")
-        let sectionsAliens =  SectionsHeros(items: entity.aliens, name: "Alienígenas")
-        let sectionsHumans =  SectionsHeros(items: entity.humans, name: "Humanos")
-        sections = [
-            sectionsHeader,
-            sectionsHero,
-            sectionsVillains,
-            sectionsAntiHeroes,
-            sectionsAliens,
-            sectionsHumans
+        let sections = [
+            SectionsHead(items: [ItemDefault()]),
+            SectionsHeros(items: entity.heroes, name: "Heróis"),
+            SectionsHeros(items: entity.villains, name: "Vilões"),
+            SectionsHeros(items: entity.antiHeroes, name: "Anti-heróis"),
+            SectionsHeros(items: entity.aliens, name: "Alienígenas"),
+            SectionsHeros(items: entity.humans, name: "Humanos")
         ]
         output?.load(sections: sections)
     }

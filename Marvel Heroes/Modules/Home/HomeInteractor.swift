@@ -79,6 +79,7 @@ class GeneractionEntityMake {
         caracteristics.birth = model.birth
         caracteristics.height = makeEntityEight(model: model.height)
         caracteristics.weight = makeEntityEight(model: model.weight)
+        caracteristics.universe = model.universe.rawValue
         return caracteristics
     }
     
@@ -121,6 +122,7 @@ class AlienEntity {
 }
 class CaracteristicsEntity {
     var birth: String = ""
+    var universe: String = ""
     var weight: EightEntity = EightEntity()
     var height: EightEntity = EightEntity()
     
@@ -133,4 +135,7 @@ class EightEntity {
 enum UnityEntity: String {
     case kg = "kg"
     case meters = "meters"
+}
+enum UniverseEntity: String {
+    case terra616 = "Terra 616"
 }

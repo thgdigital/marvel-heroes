@@ -23,18 +23,17 @@ class DetailPresenter: DetailPresenterInput {
     }
     
     func viewDidLoad() {
-        var sections: [Sections] = [Sections]()
+        let caracteristcs = [
+            CaracteristicsItem(image: "Age", text: alien.caracteristics.birth),
+            CaracteristicsItem(image: "Weight", text: "\(alien.caracteristics.height.value) kg"),
+            CaracteristicsItem(image: "Height", text: "\(alien.caracteristics.height.value) m"),
+            CaracteristicsItem(image: "Universe", text: "\(alien.caracteristics.universe)")]
         
-        sections = [
+        let sections = [
             SectionHeaderDetail(items: [ItemHederDetail(alien: alien)]),
-            CaracteristicsDetailSection(items: [ItemDefault()]),
+            CaracteristicsDetailSection(items: caracteristcs),
             SectionDetailBiography(items:  [BiographyItem(alien: alien)])
         ]
-        
-//        SectionHeaderDetail(items: [ItemDefault()]),
-        //            CaracteristicsDetailSection(items: [ItemDefault()]),
-        //            SectionDetailBiography(items:  [ItemDefault()])
-        
         output?.showBackgroundView(idHero: self.idHero, image: alien.imagePath)
         output?.loadView(sections: sections)
     }
