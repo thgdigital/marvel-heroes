@@ -32,7 +32,8 @@ class DetailPresenter: DetailPresenterInput {
         let sections = [
             SectionHeaderDetail(items: [ItemHederDetail(alien: alien)]),
             CaracteristicsDetailSection(items: caracteristcs),
-            SectionDetailBiography(items:  [BiographyItem(alien: alien)])
+            SectionDetailBiography(items:  [BiographyItem(alien: alien)]),
+            SectionsDetailMoveis(items: alien.movies.map({MoviesItem(image: $0)}))
         ]
         output?.showBackgroundView(idHero: self.idHero, image: alien.imagePath)
         output?.loadView(sections: sections)

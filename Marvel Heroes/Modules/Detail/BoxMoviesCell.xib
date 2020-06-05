@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="BoxMoviesCell" customModule="Marvel_Heroes" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="191" height="108"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="191" height="108"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="SwJ-pA-Oex">
+                        <rect key="frame" x="0.0" y="0.0" width="191" height="108"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" priority="750" constant="191" id="8fE-ll-jAU"/>
+                        </constraints>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="SYJ-44-Ba0">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="SwJ-pA-Oex" secondAttribute="trailing" id="0Hi-dm-dgD"/>
+                <constraint firstAttribute="bottom" secondItem="SwJ-pA-Oex" secondAttribute="bottom" id="7ea-3t-Kct"/>
+                <constraint firstItem="SwJ-pA-Oex" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="PY2-Ve-AhO"/>
+                <constraint firstItem="SwJ-pA-Oex" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ib4-Pz-WIr"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="191" height="108"/>
+            <connections>
+                <outlet property="cellWidthConstraint" destination="8fE-ll-jAU" id="cez-K5-jy8"/>
+                <outlet property="collectionView" destination="SwJ-pA-Oex" id="bEV-1X-2Hd"/>
+            </connections>
+            <point key="canvasLocation" x="239.85507246376812" y="113.83928571428571"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -10,7 +10,11 @@ import LBTATools
 
 class BoxCaracteristicsCell: CollectionViewCell {
     
-    var items: [CaracteristicsItem] = []
+    var items: [CaracteristicsItem] = []{
+        didSet {
+            collectionView.reloadData()
+        }
+    }
     
     @IBOutlet weak var collectionView: UICollectionView! {
         didSet {
