@@ -29,11 +29,20 @@ class DetailPresenter: DetailPresenterInput {
             CaracteristicsItem(image: "Height", text: "\(alien.caracteristics.height.value) m"),
             CaracteristicsItem(image: "Universe", text: "\(alien.caracteristics.universe)")]
         
+        let abilities = [
+            AbilitiesItem(name: "Força", abilitie: alien.abilities.force),
+            AbilitiesItem(name: "Inteligência", abilitie: alien.abilities.intelligence),
+            AbilitiesItem(name: "Agilidade", abilitie: alien.abilities.agility),
+            AbilitiesItem(name: "Resistência", abilitie: alien.abilities.endurance),
+            AbilitiesItem(name: "Velocidade", abilitie: alien.abilities.velocity)
+        ]
+        
         let sections = [
             SectionHeaderDetail(items: [ItemHederDetail(alien: alien)]),
             CaracteristicsDetailSection(items: caracteristcs),
             SectionDetailBiography(items:  [BiographyItem(alien: alien)]),
-            SectionsDetailMoveis(items: alien.movies.map({MoviesItem(image: $0)}))
+            SectionDetailAbilities(items: abilities, name: "Habilidades"),
+            SectionsDetailMoveis(items: alien.movies.map({MoviesItem(image: $0)}), name: "Filmes")
         ]
         output?.showBackgroundView(idHero: self.idHero, image: alien.imagePath)
         output?.loadView(sections: sections)

@@ -29,6 +29,16 @@ class SectionsDetailMoveis: Sections {
     override func getCellSize(_ cell: CollectionViewCell.Type, for indexPath: IndexPath) -> CGSize {
         .init(width: UIScreen.main.bounds.width - 48, height: 235)
     }
+    
+    override func header() -> CollectionViewHeader.Type? {
+        GenericDetailHeader.self
+    }
+    
+    override func willDisplayHeader(_ headerView: CollectionViewHeader) {
+        if let header = headerView as? GenericDetailHeader {
+            header.configure(title: name)
+        }
+    }
 }
 
 struct MoviesItem {
