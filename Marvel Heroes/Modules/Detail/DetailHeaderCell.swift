@@ -21,5 +21,10 @@ class DetailHeaderCell: CollectionViewCell {
         alterEgoLabel.font = .profileSubTitle
         alterEgoLabel.textColor = .primaryGray
     }
+    
+    func configure(item: ItemHederDetail) {
+        titleLabel.text = item.name
+        alterEgoLabel.text = item.alterEgo
+    }
 
 }

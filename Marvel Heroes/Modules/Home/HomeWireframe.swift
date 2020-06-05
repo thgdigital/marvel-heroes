@@ -35,9 +35,6 @@ class HomeWireframe {
     }
     
     func showDetail(idHero: String, alien: AlienEntity) {
-        let detailViewController = DetailController(collectionViewLayout: UICollectionViewFlowLayout())
-        detailViewController.idHero = idHero
-        detailViewController.modalPresentationStyle = .fullScreen
-        viewController?.present(detailViewController, animated: true, completion: nil)
+        viewController?.present(DetailWireframe().showView(idHero: idHero, alien: alien), animated: true, completion: nil)
     }
 }

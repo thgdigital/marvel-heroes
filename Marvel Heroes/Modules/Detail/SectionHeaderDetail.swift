@@ -18,4 +18,21 @@ class SectionHeaderDetail: Sections {
     override func getCellSize(_ cell: CollectionViewCell.Type, for indexPath: IndexPath) -> CGSize {
         .init(width: UIScreen.main.bounds.width, height: 400)
     }
+    
+    override func willDisplayCell(_ cell: CollectionViewCell, at indexPath: IndexPath) {
+        guard let cell = cell as? DetailHeaderCell, let item = items[indexPath.row] as? ItemHederDetail else {
+            return
+        }
+        cell.configure(item: item)
+    }
+}
+
+struct ItemHederDetail {
+    var name: String = ""
+    var alterEgo: String = ""
+    
+    init(alien: AlienEntity) {
+        name = alien.name
+        alterEgo = alien.alterEgo
+    }
 }

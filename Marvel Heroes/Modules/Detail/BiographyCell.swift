@@ -16,5 +16,8 @@ class BiographyCell: CollectionViewCell {
         textLabel.font = .descriptionTitle
         textLabel.textColor = .primaryGray
     }
-
+    
+    func configure(text: String) {
+        textLabel.text = text
+    }
 }

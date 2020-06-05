@@ -59,6 +59,9 @@
 		F32D496824896D340098EA43 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32D496724896D340098EA43 /* HomePresenter.swift */; };
 		F32D496A24896D470098EA43 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32D496924896D470098EA43 /* HomeInteractor.swift */; };
 		F32D496D24897A5B0098EA43 /* MarvelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32D496C24897A5B0098EA43 /* MarvelManager.swift */; };
+		F32D496F2489BF430098EA43 /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32D496E2489BF430098EA43 /* DetailPresenter.swift */; };
+		F32D49712489BF5A0098EA43 /* DetailProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32D49702489BF5A0098EA43 /* DetailProtocol.swift */; };
+		F32D49732489C0500098EA43 /* DetailWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32D49722489C0500098EA43 /* DetailWireframe.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -130,6 +133,9 @@
 		F32D496724896D340098EA43 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		F32D496924896D470098EA43 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
 		F32D496C24897A5B0098EA43 /* MarvelManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelManager.swift; sourceTree = "<group>"; };
+		F32D496E2489BF430098EA43 /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
+		F32D49702489BF5A0098EA43 /* DetailProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailProtocol.swift; sourceTree = "<group>"; };
+		F32D49722489C0500098EA43 /* DetailWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailWireframe.swift; sourceTree = "<group>"; };
 		F34C86339877C54BCF2D20B9 /* Pods-Marvel HeroesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marvel HeroesTests.debug.xcconfig"; path = "Target Support Files/Pods-Marvel HeroesTests/Pods-Marvel HeroesTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F443457188AE1D895A2A4B20 /* Pods_Marvel_Heroes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Marvel_Heroes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -328,6 +334,9 @@
 				F32D495A2488FA3E0098EA43 /* SectionDetailBiography.swift */,
 				F32D495C2488FA6F0098EA43 /* BiographyCell.swift */,
 				F32D495D2488FA6F0098EA43 /* BiographyCell.xib */,
+				F32D496E2489BF430098EA43 /* DetailPresenter.swift */,
+				F32D49702489BF5A0098EA43 /* DetailProtocol.swift */,
+				F32D49722489C0500098EA43 /* DetailWireframe.swift */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -552,8 +561,11 @@
 				F32D493824869CCA0098EA43 /* SectionsHeros.swift in Sources */,
 				F32D48E62485D2080098EA43 /* AppDelegate.swift in Sources */,
 				F32D491624865E620098EA43 /* CollectionViewCell.swift in Sources */,
+				F32D49712489BF5A0098EA43 /* DetailProtocol.swift in Sources */,
 				F32D4955248846860098EA43 /* CaracteristicsDetailSection.swift in Sources */,
+				F32D496F2489BF430098EA43 /* DetailPresenter.swift in Sources */,
 				F32D4925248661720098EA43 /* HeadChangeCharacterCell.swift in Sources */,
+				F32D49732489C0500098EA43 /* DetailWireframe.swift in Sources */,
 				F32D4922248660DE0098EA43 /* SectionsHead.swift in Sources */,
 				F32D493B24869D2F0098EA43 /* HereosHeader.swift in Sources */,
 				F32D493F2486A1550098EA43 /* BoxHeroesCell.swift in Sources */,

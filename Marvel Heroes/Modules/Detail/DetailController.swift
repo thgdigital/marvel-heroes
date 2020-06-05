@@ -16,7 +16,7 @@ func + (left: CGPoint, right: CGPoint) -> CGPoint {
 }
 
 class DetailController: CollectionViewController {
-    
+    var presenter: DetailPresenterInput!
     var idHero: String = ""
     
     let backgroundImageView: UIImageView = {
@@ -28,28 +28,16 @@ class DetailController: CollectionViewController {
     var panGR: UIPanGestureRecognizer!
     override func viewDidLoad() {
         super.viewDidLoad()
+        presenter.viewDidLoad()
         self.hero.isEnabled = true
         self.view.hero.modifiers = [.cascade]
         view.backgroundColor = .black
         collectionView.backgroundColor = .black
         
-        collectionView.backgroundView = backgroundImageView
-        
-        backgroundImageView.hero.id = idHero
-        
-        let gradientView = GradientView(frame: collectionView.frame)
-        
-        collectionView.backgroundView?.addSubview(gradientView)
-        
         panGR = UIPanGestureRecognizer(target: self,
                                        action: #selector(handlePan(gestureRecognizer:)))
         view.addGestureRecognizer(panGR)
-        
-        sections = [
-            SectionHeaderDetail(items: [ItemDefault()]),
-            CaracteristicsDetailSection(items: [ItemDefault()]),
-            SectionDetailBiography(items:  [ItemDefault()])
-        ]
+
     }
     
     @objc func handlePan(gestureRecognizer:UIPanGestureRecognizer) {
@@ -73,4 +61,20 @@ class DetailController: CollectionViewController {
         }
     }
     
+}
+
+extension DetailController: DetailPresenterOuput {
+    
+    func loadView(sections: [Sections]) {
+        self.sections = sections
+        collectionView.reloadData()
+    }
+    
+    func showBackgroundView(idHero: String, image: String) {
+        collectionView.backgroundView = backgroundImageView
+        backgroundImageView.image = UIImage(named: image)
+        backgroundImageView.hero.id = idHero
+        let gradientView = GradientView(frame: collectionView.frame)
+        collectionView.backgroundView?.addSubview(gradientView)
+    }
 }
