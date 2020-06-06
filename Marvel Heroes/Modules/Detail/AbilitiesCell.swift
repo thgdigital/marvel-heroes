@@ -33,6 +33,7 @@ class AbilitiesCell: CollectionViewCell {
     func configure(item: AbilitiesItem){
         self.item = item
         titleLabel.text = item.name
+        collectionView.reloadData()
     }
     
 }

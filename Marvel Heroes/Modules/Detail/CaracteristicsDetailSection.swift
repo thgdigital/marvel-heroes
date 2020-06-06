@@ -29,6 +29,7 @@ class CaracteristicsDetailSection: Sections {
         
         cell.items = items
     }
+    
 
 }
 

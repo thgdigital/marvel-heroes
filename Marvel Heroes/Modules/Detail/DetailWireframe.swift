@@ -11,7 +11,7 @@ import UIKit
 class DetailWireframe {
     weak var viewController: UIViewController?
     
-    func showView(idHero: String, alien: AlienEntity) -> UINavigationController {
+    func showView(idHero: String, alien: AlienEntity) -> UIViewController {
         let presenter = DetailPresenter(alien: alien, idHero: idHero, wireframe: self)
         
         let detailViewController = DetailController(collectionViewLayout: UICollectionViewFlowLayout())
@@ -19,16 +19,8 @@ class DetailWireframe {
         detailViewController.presenter = presenter
         presenter.output = detailViewController
         viewController = detailViewController
-        
-        let navigation = UINavigationController(rootViewController: detailViewController)
-        navigation.modalPresentationStyle = .fullScreen
-        let navigationBar  = navigation.navigationBar
-        navigationBar.shadowImage = UIImage()
-        navigationBar.tintColor = .white
-        navigationBar.isTranslucent = false
-        navigationBar.barTintColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.5)
-        
-        return navigation
+        detailViewController.modalPresentationStyle = .fullScreen
+        return detailViewController
     }
     func closeView() {
         viewController?.dismiss(animated: true, completion: nil)
