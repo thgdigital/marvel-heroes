@@ -72,6 +72,28 @@
 		F32D4983248A7AD50098EA43 /* GenericDetailHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = F32D4981248A7AD40098EA43 /* GenericDetailHeader.xib */; };
 		F3CD057D248A8257001A98A4 /* AbilitiesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CD057B248A8257001A98A4 /* AbilitiesCell.swift */; };
 		F3CD057E248A8257001A98A4 /* AbilitiesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3CD057C248A8257001A98A4 /* AbilitiesCell.xib */; };
+		F3CD0581248B44B6001A98A4 /* Generaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CD0580248B44B6001A98A4 /* Generaction.swift */; };
+		F3CD0583248B44D5001A98A4 /* Alien.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CD0582248B44D5001A98A4 /* Alien.swift */; };
+		F3CD0585248B44EC001A98A4 /* Abilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CD0584248B44EC001A98A4 /* Abilities.swift */; };
+		F3CD0587248B450F001A98A4 /* Caracteristics.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CD0586248B450F001A98A4 /* Caracteristics.swift */; };
+		F3CD0589248B4526001A98A4 /* Eight.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CD0588248B4526001A98A4 /* Eight.swift */; };
+		F3CD058B248B453C001A98A4 /* Unity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CD058A248B453C001A98A4 /* Unity.swift */; };
+		F3CD058D248B4556001A98A4 /* Universe.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CD058C248B4556001A98A4 /* Universe.swift */; };
+		F3CD0590248B4649001A98A4 /* GeneractionEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CD058F248B4649001A98A4 /* GeneractionEntity.swift */; };
+		F3CD0592248B4663001A98A4 /* AbilitiesEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CD0591248B4663001A98A4 /* AbilitiesEntity.swift */; };
+		F3CD0594248B467D001A98A4 /* AlienEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CD0593248B467D001A98A4 /* AlienEntity.swift */; };
+		F3CD0596248B469F001A98A4 /* CaracteristicsEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CD0595248B469F001A98A4 /* CaracteristicsEntity.swift */; };
+		F3CD0598248B46B7001A98A4 /* EightEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CD0597248B46B7001A98A4 /* EightEntity.swift */; };
+		F3CD059A248B46CA001A98A4 /* UnityEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CD0599248B46CA001A98A4 /* UnityEntity.swift */; };
+		F3CD059C248B46DE001A98A4 /* UniverseEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CD059B248B46DE001A98A4 /* UniverseEntity.swift */; };
+		F3CD059F248B4706001A98A4 /* GeneractionEntityMake.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CD059E248B4706001A98A4 /* GeneractionEntityMake.swift */; };
+		F3CD05A2248B4775001A98A4 /* ItemHeroes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CD05A1248B4775001A98A4 /* ItemHeroes.swift */; };
+		F3CD05A4248B47B6001A98A4 /* ItemMake.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CD05A3248B47B6001A98A4 /* ItemMake.swift */; };
+		F3CD05B2248B49D4001A98A4 /* ItemHederDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CD05B1248B49D4001A98A4 /* ItemHederDetail.swift */; };
+		F3CD05B4248B4A07001A98A4 /* CaracteristicsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CD05B3248B4A07001A98A4 /* CaracteristicsItem.swift */; };
+		F3CD05B6248B4A2C001A98A4 /* BiographyItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CD05B5248B4A2C001A98A4 /* BiographyItem.swift */; };
+		F3CD05B8248B4A4C001A98A4 /* MoviesItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CD05B7248B4A4C001A98A4 /* MoviesItem.swift */; };
+		F3CD05BA248B4A6C001A98A4 /* AbilitiesItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CD05B9248B4A6C001A98A4 /* AbilitiesItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -157,6 +179,28 @@
 		F34C86339877C54BCF2D20B9 /* Pods-Marvel HeroesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marvel HeroesTests.debug.xcconfig"; path = "Target Support Files/Pods-Marvel HeroesTests/Pods-Marvel HeroesTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F3CD057B248A8257001A98A4 /* AbilitiesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbilitiesCell.swift; sourceTree = "<group>"; };
 		F3CD057C248A8257001A98A4 /* AbilitiesCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AbilitiesCell.xib; sourceTree = "<group>"; };
+		F3CD0580248B44B6001A98A4 /* Generaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Generaction.swift; sourceTree = "<group>"; };
+		F3CD0582248B44D5001A98A4 /* Alien.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alien.swift; sourceTree = "<group>"; };
+		F3CD0584248B44EC001A98A4 /* Abilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Abilities.swift; sourceTree = "<group>"; };
+		F3CD0586248B450F001A98A4 /* Caracteristics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Caracteristics.swift; sourceTree = "<group>"; };
+		F3CD0588248B4526001A98A4 /* Eight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Eight.swift; sourceTree = "<group>"; };
+		F3CD058A248B453C001A98A4 /* Unity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Unity.swift; sourceTree = "<group>"; };
+		F3CD058C248B4556001A98A4 /* Universe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Universe.swift; sourceTree = "<group>"; };
+		F3CD058F248B4649001A98A4 /* GeneractionEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneractionEntity.swift; sourceTree = "<group>"; };
+		F3CD0591248B4663001A98A4 /* AbilitiesEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbilitiesEntity.swift; sourceTree = "<group>"; };
+		F3CD0593248B467D001A98A4 /* AlienEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlienEntity.swift; sourceTree = "<group>"; };
+		F3CD0595248B469F001A98A4 /* CaracteristicsEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaracteristicsEntity.swift; sourceTree = "<group>"; };
+		F3CD0597248B46B7001A98A4 /* EightEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EightEntity.swift; sourceTree = "<group>"; };
+		F3CD0599248B46CA001A98A4 /* UnityEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnityEntity.swift; sourceTree = "<group>"; };
+		F3CD059B248B46DE001A98A4 /* UniverseEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniverseEntity.swift; sourceTree = "<group>"; };
+		F3CD059E248B4706001A98A4 /* GeneractionEntityMake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneractionEntityMake.swift; sourceTree = "<group>"; };
+		F3CD05A1248B4775001A98A4 /* ItemHeroes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemHeroes.swift; sourceTree = "<group>"; };
+		F3CD05A3248B47B6001A98A4 /* ItemMake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemMake.swift; sourceTree = "<group>"; };
+		F3CD05B1248B49D4001A98A4 /* ItemHederDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemHederDetail.swift; sourceTree = "<group>"; };
+		F3CD05B3248B4A07001A98A4 /* CaracteristicsItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaracteristicsItem.swift; sourceTree = "<group>"; };
+		F3CD05B5248B4A2C001A98A4 /* BiographyItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiographyItem.swift; sourceTree = "<group>"; };
+		F3CD05B7248B4A4C001A98A4 /* MoviesItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesItem.swift; sourceTree = "<group>"; };
+		F3CD05B9248B4A6C001A98A4 /* AbilitiesItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbilitiesItem.swift; sourceTree = "<group>"; };
 		F443457188AE1D895A2A4B20 /* Pods_Marvel_Heroes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Marvel_Heroes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -256,21 +300,9 @@
 		F32D490A2485E4CE0098EA43 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				F32D48E92485D2080098EA43 /* HomeListView.swift */,
-				F32D4921248660DE0098EA43 /* SectionsHead.swift */,
-				F32D4923248661720098EA43 /* HeadChangeCharacterCell.swift */,
-				F32D4924248661720098EA43 /* HeadChangeCharacterCell.xib */,
-				F32D493724869CCA0098EA43 /* SectionsHeros.swift */,
-				F32D493924869D2F0098EA43 /* HereosHeader.swift */,
-				F32D493A24869D2F0098EA43 /* HereosHeader.xib */,
-				F32D493D2486A1550098EA43 /* BoxHeroesCell.swift */,
-				F32D493E2486A1550098EA43 /* BoxHeroesCell.xib */,
-				F32D49412486A3CC0098EA43 /* HeroesCell.swift */,
-				F32D49422486A3CC0098EA43 /* HeroesCell.xib */,
-				F32D496324896CFA0098EA43 /* HomeProtocol.swift */,
-				F32D496524896D200098EA43 /* HomeWireframe.swift */,
-				F32D496724896D340098EA43 /* HomePresenter.swift */,
-				F32D496924896D470098EA43 /* HomeInteractor.swift */,
+				F3CD05A7248B4882001A98A4 /* User Interface */,
+				F3CD05A5248B485E001A98A4 /* Application Logic */,
+				F3CD05A0248B4769001A98A4 /* Items */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -287,6 +319,9 @@
 		F32D490C24865DD10098EA43 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				F3CD059D248B46F6001A98A4 /* Mapping */,
+				F3CD058E248B462B001A98A4 /* Entities */,
+				F3CD057F248B448A001A98A4 /* Model */,
 				F32D496B24897A420098EA43 /* Manager */,
 				F32D4960248902BD0098EA43 /* helper */,
 				F32D492A248685B00098EA43 /* Resources */,
@@ -344,29 +379,9 @@
 		F32D49452487DC9D0098EA43 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
-				F32D49462487DCC90098EA43 /* DetailController.swift */,
-				F32D494E24883FC10098EA43 /* SectionHeaderDetail.swift */,
-				F32D4950248840CD0098EA43 /* DetailHeaderCell.swift */,
-				F32D4951248840CE0098EA43 /* DetailHeaderCell.xib */,
-				F32D4954248846860098EA43 /* CaracteristicsDetailSection.swift */,
-				F32D4956248846B10098EA43 /* BoxCaracteristicsCell.swift */,
-				F32D4957248846B10098EA43 /* BoxCaracteristicsCell.xib */,
-				F32D495A2488FA3E0098EA43 /* SectionDetailBiography.swift */,
-				F32D495C2488FA6F0098EA43 /* BiographyCell.swift */,
-				F32D495D2488FA6F0098EA43 /* BiographyCell.xib */,
-				F32D496E2489BF430098EA43 /* DetailPresenter.swift */,
-				F32D49702489BF5A0098EA43 /* DetailProtocol.swift */,
-				F32D49722489C0500098EA43 /* DetailWireframe.swift */,
-				F32D4974248A732A0098EA43 /* SectionsDetailMoveis.swift */,
-				F32D4976248A73720098EA43 /* BoxMoviesCell.swift */,
-				F32D4977248A73720098EA43 /* BoxMoviesCell.xib */,
-				F32D497A248A75600098EA43 /* MoveisDetailCell.swift */,
-				F32D497B248A75600098EA43 /* MoveisDetailCell.xib */,
-				F32D497E248A7A8E0098EA43 /* SectionDetailAbilities.swift */,
-				F32D4980248A7AD40098EA43 /* GenericDetailHeader.swift */,
-				F32D4981248A7AD40098EA43 /* GenericDetailHeader.xib */,
-				F3CD057B248A8257001A98A4 /* AbilitiesCell.swift */,
-				F3CD057C248A8257001A98A4 /* AbilitiesCell.xib */,
+				F3CD05BB248B4AAE001A98A4 /* Application Logic */,
+				F3CD05B0248B49C5001A98A4 /* Items */,
+				F3CD05AC248B4963001A98A4 /* User Interface */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -385,6 +400,201 @@
 				F32D496C24897A5B0098EA43 /* MarvelManager.swift */,
 			);
 			path = Manager;
+			sourceTree = "<group>";
+		};
+		F3CD057F248B448A001A98A4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F3CD0580248B44B6001A98A4 /* Generaction.swift */,
+				F3CD0582248B44D5001A98A4 /* Alien.swift */,
+				F3CD0584248B44EC001A98A4 /* Abilities.swift */,
+				F3CD0586248B450F001A98A4 /* Caracteristics.swift */,
+				F3CD0588248B4526001A98A4 /* Eight.swift */,
+				F3CD058A248B453C001A98A4 /* Unity.swift */,
+				F3CD058C248B4556001A98A4 /* Universe.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F3CD058E248B462B001A98A4 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				F3CD058F248B4649001A98A4 /* GeneractionEntity.swift */,
+				F3CD0591248B4663001A98A4 /* AbilitiesEntity.swift */,
+				F3CD0593248B467D001A98A4 /* AlienEntity.swift */,
+				F3CD0595248B469F001A98A4 /* CaracteristicsEntity.swift */,
+				F3CD0597248B46B7001A98A4 /* EightEntity.swift */,
+				F3CD0599248B46CA001A98A4 /* UnityEntity.swift */,
+				F3CD059B248B46DE001A98A4 /* UniverseEntity.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		F3CD059D248B46F6001A98A4 /* Mapping */ = {
+			isa = PBXGroup;
+			children = (
+				F3CD059E248B4706001A98A4 /* GeneractionEntityMake.swift */,
+			);
+			path = Mapping;
+			sourceTree = "<group>";
+		};
+		F3CD05A0248B4769001A98A4 /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				F3CD05A1248B4775001A98A4 /* ItemHeroes.swift */,
+				F3CD05A3248B47B6001A98A4 /* ItemMake.swift */,
+			);
+			path = Items;
+			sourceTree = "<group>";
+		};
+		F3CD05A5248B485E001A98A4 /* Application Logic */ = {
+			isa = PBXGroup;
+			children = (
+				F3CD05AA248B48F4001A98A4 /* Interactor */,
+				F3CD05A6248B4864001A98A4 /* Protocol */,
+			);
+			path = "Application Logic";
+			sourceTree = "<group>";
+		};
+		F3CD05A6248B4864001A98A4 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				F32D496324896CFA0098EA43 /* HomeProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		F3CD05A7248B4882001A98A4 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				F3CD05AB248B490E001A98A4 /* Presenter */,
+				F3CD05A9248B48BA001A98A4 /* Wireframe */,
+				F3CD05A8248B48B4001A98A4 /* View */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		F3CD05A8248B48B4001A98A4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F32D48E92485D2080098EA43 /* HomeListView.swift */,
+				F32D4923248661720098EA43 /* HeadChangeCharacterCell.swift */,
+				F32D4924248661720098EA43 /* HeadChangeCharacterCell.xib */,
+				F32D493924869D2F0098EA43 /* HereosHeader.swift */,
+				F32D493A24869D2F0098EA43 /* HereosHeader.xib */,
+				F32D493D2486A1550098EA43 /* BoxHeroesCell.swift */,
+				F32D493E2486A1550098EA43 /* BoxHeroesCell.xib */,
+				F32D49412486A3CC0098EA43 /* HeroesCell.swift */,
+				F32D4921248660DE0098EA43 /* SectionsHead.swift */,
+				F32D493724869CCA0098EA43 /* SectionsHeros.swift */,
+				F32D49422486A3CC0098EA43 /* HeroesCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F3CD05A9248B48BA001A98A4 /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				F32D496524896D200098EA43 /* HomeWireframe.swift */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		F3CD05AA248B48F4001A98A4 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				F32D496924896D470098EA43 /* HomeInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		F3CD05AB248B490E001A98A4 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F32D496724896D340098EA43 /* HomePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F3CD05AC248B4963001A98A4 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				F3CD05AF248B4981001A98A4 /* Presenter */,
+				F3CD05AE248B4976001A98A4 /* View */,
+				F3CD05AD248B496B001A98A4 /* Wireframe */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		F3CD05AD248B496B001A98A4 /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				F32D49722489C0500098EA43 /* DetailWireframe.swift */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		F3CD05AE248B4976001A98A4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F32D494E24883FC10098EA43 /* SectionHeaderDetail.swift */,
+				F32D4950248840CD0098EA43 /* DetailHeaderCell.swift */,
+				F32D4951248840CE0098EA43 /* DetailHeaderCell.xib */,
+				F32D4954248846860098EA43 /* CaracteristicsDetailSection.swift */,
+				F32D4956248846B10098EA43 /* BoxCaracteristicsCell.swift */,
+				F32D4957248846B10098EA43 /* BoxCaracteristicsCell.xib */,
+				F32D495A2488FA3E0098EA43 /* SectionDetailBiography.swift */,
+				F32D495C2488FA6F0098EA43 /* BiographyCell.swift */,
+				F32D495D2488FA6F0098EA43 /* BiographyCell.xib */,
+				F32D4974248A732A0098EA43 /* SectionsDetailMoveis.swift */,
+				F32D4976248A73720098EA43 /* BoxMoviesCell.swift */,
+				F32D4977248A73720098EA43 /* BoxMoviesCell.xib */,
+				F32D497A248A75600098EA43 /* MoveisDetailCell.swift */,
+				F32D497B248A75600098EA43 /* MoveisDetailCell.xib */,
+				F32D497E248A7A8E0098EA43 /* SectionDetailAbilities.swift */,
+				F32D4980248A7AD40098EA43 /* GenericDetailHeader.swift */,
+				F32D4981248A7AD40098EA43 /* GenericDetailHeader.xib */,
+				F3CD057B248A8257001A98A4 /* AbilitiesCell.swift */,
+				F3CD057C248A8257001A98A4 /* AbilitiesCell.xib */,
+				F32D49462487DCC90098EA43 /* DetailController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F3CD05AF248B4981001A98A4 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F32D496E2489BF430098EA43 /* DetailPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F3CD05B0248B49C5001A98A4 /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				F3CD05B1248B49D4001A98A4 /* ItemHederDetail.swift */,
+				F3CD05B3248B4A07001A98A4 /* CaracteristicsItem.swift */,
+				F3CD05B5248B4A2C001A98A4 /* BiographyItem.swift */,
+				F3CD05B7248B4A4C001A98A4 /* MoviesItem.swift */,
+				F3CD05B9248B4A6C001A98A4 /* AbilitiesItem.swift */,
+			);
+			path = Items;
+			sourceTree = "<group>";
+		};
+		F3CD05BB248B4AAE001A98A4 /* Application Logic */ = {
+			isa = PBXGroup;
+			children = (
+				F3CD05BC248B4AB7001A98A4 /* Protocol */,
+			);
+			path = "Application Logic";
+			sourceTree = "<group>";
+		};
+		F3CD05BC248B4AB7001A98A4 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				F32D49702489BF5A0098EA43 /* DetailProtocol.swift */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -575,22 +785,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3CD059F248B4706001A98A4 /* GeneractionEntityMake.swift in Sources */,
 				F32D48EA2485D2080098EA43 /* HomeListView.swift in Sources */,
+				F3CD059C248B46DE001A98A4 /* UniverseEntity.swift in Sources */,
 				F32D4936248693F30098EA43 /* ColorsPrimary.swift in Sources */,
+				F3CD0585248B44EC001A98A4 /* Abilities.swift in Sources */,
 				F32D49432486A3CC0098EA43 /* HeroesCell.swift in Sources */,
+				F3CD05A2248B4775001A98A4 /* ItemHeroes.swift in Sources */,
 				F32D495E2488FA6F0098EA43 /* BiographyCell.swift in Sources */,
+				F3CD0587248B450F001A98A4 /* Caracteristics.swift in Sources */,
+				F3CD05B8248B4A4C001A98A4 /* MoviesItem.swift in Sources */,
 				F3CD057D248A8257001A98A4 /* AbilitiesCell.swift in Sources */,
 				F32D492024865EB30098EA43 /* ReusableIdentifier.swift in Sources */,
 				F32D496624896D200098EA43 /* HomeWireframe.swift in Sources */,
+				F3CD0583248B44D5001A98A4 /* Alien.swift in Sources */,
 				F32D491C24865E620098EA43 /* CollectionViewHeader.swift in Sources */,
+				F3CD05A4248B47B6001A98A4 /* ItemMake.swift in Sources */,
 				F32D496824896D340098EA43 /* HomePresenter.swift in Sources */,
 				F32D4958248846B10098EA43 /* BoxCaracteristicsCell.swift in Sources */,
 				F32D4978248A73720098EA43 /* BoxMoviesCell.swift in Sources */,
 				F32D491924865E620098EA43 /* Sections.swift in Sources */,
+				F3CD05BA248B4A6C001A98A4 /* AbilitiesItem.swift in Sources */,
 				F32D496A24896D470098EA43 /* HomeInteractor.swift in Sources */,
+				F3CD05B6248B4A2C001A98A4 /* BiographyItem.swift in Sources */,
 				F32D4975248A732A0098EA43 /* SectionsDetailMoveis.swift in Sources */,
 				F32D4982248A7AD50098EA43 /* GenericDetailHeader.swift in Sources */,
 				F32D495B2488FA3E0098EA43 /* SectionDetailBiography.swift in Sources */,
+				F3CD0592248B4663001A98A4 /* AbilitiesEntity.swift in Sources */,
+				F3CD0589248B4526001A98A4 /* Eight.swift in Sources */,
+				F3CD0590248B4649001A98A4 /* GeneractionEntity.swift in Sources */,
 				F32D496D24897A5B0098EA43 /* MarvelManager.swift in Sources */,
 				F32D4929248682950098EA43 /* Typography.swift in Sources */,
 				F32D491D24865E620098EA43 /* CollectionViewFooter.swift in Sources */,
@@ -599,17 +822,26 @@
 				F32D497C248A75600098EA43 /* MoveisDetailCell.swift in Sources */,
 				F32D493824869CCA0098EA43 /* SectionsHeros.swift in Sources */,
 				F32D48E62485D2080098EA43 /* AppDelegate.swift in Sources */,
+				F3CD059A248B46CA001A98A4 /* UnityEntity.swift in Sources */,
+				F3CD058D248B4556001A98A4 /* Universe.swift in Sources */,
 				F32D491624865E620098EA43 /* CollectionViewCell.swift in Sources */,
+				F3CD0596248B469F001A98A4 /* CaracteristicsEntity.swift in Sources */,
+				F3CD05B4248B4A07001A98A4 /* CaracteristicsItem.swift in Sources */,
 				F32D49712489BF5A0098EA43 /* DetailProtocol.swift in Sources */,
 				F32D4955248846860098EA43 /* CaracteristicsDetailSection.swift in Sources */,
 				F32D496F2489BF430098EA43 /* DetailPresenter.swift in Sources */,
 				F32D4925248661720098EA43 /* HeadChangeCharacterCell.swift in Sources */,
 				F32D49732489C0500098EA43 /* DetailWireframe.swift in Sources */,
+				F3CD058B248B453C001A98A4 /* Unity.swift in Sources */,
+				F3CD0594248B467D001A98A4 /* AlienEntity.swift in Sources */,
 				F32D4922248660DE0098EA43 /* SectionsHead.swift in Sources */,
 				F32D493B24869D2F0098EA43 /* HereosHeader.swift in Sources */,
 				F32D493F2486A1550098EA43 /* BoxHeroesCell.swift in Sources */,
+				F3CD0598248B46B7001A98A4 /* EightEntity.swift in Sources */,
+				F3CD05B2248B49D4001A98A4 /* ItemHederDetail.swift in Sources */,
 				F32D48E82485D2080098EA43 /* SceneDelegate.swift in Sources */,
 				F32D496424896CFB0098EA43 /* HomeProtocol.swift in Sources */,
+				F3CD0581248B44B6001A98A4 /* Generaction.swift in Sources */,
 				F32D4962248902D20098EA43 /* GradientView.swift in Sources */,
 				F32D49472487DCC90098EA43 /* DetailController.swift in Sources */,
 				F32D497F248A7A8F0098EA43 /* SectionDetailAbilities.swift in Sources */,

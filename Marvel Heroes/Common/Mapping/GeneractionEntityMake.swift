@@ -1,41 +1,12 @@
 //
-//  HomeInteractor.swift
+//  GeneractionEntityMake.swift
 //  Marvel Heroes
 //
-//  Created by Thiago Vaz on 04/06/20.
+//  Created by Thiago Vaz on 06/06/20.
 //  Copyright © 2020 Thiago Santos. All rights reserved.
 //
 
 import Foundation
-
-
-class HomeInteractor: HomeInteractorInput {
-    
-    weak var ouput:HomeInteractorOutput?
-    
-    var manager: MarvelManager
-    
-    init(manager: MarvelManager) {
-        self.manager = manager
-    }
-    
-    func loadData() {
-        
-        manager.getHeroes{ [weak self] result in
-            guard let strongSelf = self else {
-                return
-            }
-            
-            switch result {
-                
-            case .success(let result):
-                strongSelf.ouput?.loadData(entity: GeneractionEntityMake.makeEntity(model: result))
-            case .failure(let error):
-                print(error.localizedDescription)
-            }
-        }
-    }
-}
 
 class GeneractionEntityMake {
     
@@ -94,48 +65,4 @@ class GeneractionEntityMake {
         }
         return eightEntity
     }
-}
-
-class GeneractionEntity {
-    var heroes: [AlienEntity] = []
-    var villains: [AlienEntity] = []
-    var antiHeroes: [AlienEntity] = []
-    var aliens: [AlienEntity] = []
-    var humans: [AlienEntity] = []
-}
-
-class AbilitiesEntity {
-    var force: Int = 0
-    var intelligence: Int = 0
-    var agility: Int = 0
-    var endurance: Int = 0
-    var velocity: Int = 0
-}
-class AlienEntity {
-    var name: String = ""
-    var alterEgo: String = ""
-    var imagePath: String = ""
-    var biography: String = ""
-    var abilities: AbilitiesEntity = AbilitiesEntity()
-    var movies: [String] = []
-    var caracteristics: CaracteristicsEntity = CaracteristicsEntity()
-}
-class CaracteristicsEntity {
-    var birth: String = ""
-    var universe: String = ""
-    var weight: EightEntity = EightEntity()
-    var height: EightEntity = EightEntity()
-    
-}
-class EightEntity {
-    var value: Double = 0.0
-    var unity: UnityEntity = .kg
-}
-
-enum UnityEntity: String {
-    case kg = "kg"
-    case meters = "meters"
-}
-enum UniverseEntity: String {
-    case terra616 = "Terra 616"
 }
